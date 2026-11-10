@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fd267a">
+<title>Tinder Car</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tinder Car">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="accueil" class="ecran degrade">
+  <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4-3 5-3 9a3 3 0 0 0 6 0c0-1-.5-2-1-3 3 1 5 4 5 7a7 7 0 0 1-14 0c0-6 7-8 7-13z" fill="#fff"/></svg>
+  <h1>Tinder Car</h1>
+  <p class="accroche">Swipe les photos et trouve notre future familiale convertible E85.</p>
+  <p id="info" class="info"></p>
+  <div class="actions">
+    <button id="b-commencer" class="gros" hidden>Commencer</button>
+    <button id="b-reprendre" class="gros" hidden>Reprendre</button>
+    <button id="b-resultat" class="gros" hidden>Voir mon résultat</button>
+    <button id="b-recommencer" class="lien" hidden>Recommencer</button>
+  </div>
+  <p class="aide">Droite : j'aime · Gauche : non · Haut : super like (5 max)</p>
+</section>
+
+<section id="swipe" class="ecran" hidden>
+  <header class="barre">
+    <div class="progression"><span id="prog"></span></div>
+    <span id="compte" class="compte"></span>
+  </header>
+  <div id="pile" class="pile"></div>
+  <p id="toast" class="toast" role="status" hidden></p>
+  <nav class="boutons">
+    <button id="b-annuler" class="rond petit annuler" aria-label="Annuler le dernier swipe">
+      <svg viewBox="0 0 24 24"><path d="M9 14L4 9l5-5M4 9h10a6 6 0 0 1 0 12h-3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button id="b-nope" class="rond nope" aria-label="Nope">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+    </button>
+    <button id="b-super" class="rond petit super" aria-label="Super like">
+      <svg viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z" fill="currentColor"/></svg>
+      <span id="supers" class="pastille"></span>
+    </button>
+    <button id="b-like" class="rond like" aria-label="Like">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z" fill="currentColor"/></svg>
+    </button>
+  </nav>
+</section>
+
+<section id="match" class="ecran degrade defile" hidden>
+  <h2 class="titre-match">C'est un Match !</h2>
+  <p id="m-message" class="m-message"></p>
+  <img id="m-photo" class="m-photo" alt="">
+  <div class="fiche-match">
+    <h3 id="m-nom"></h3>
+    <div id="m-fiche"></div>
+  </div>
+  <button id="b-classement" class="gros">Voir le classement</button>
+</section>
+
+<section id="classement" class="ecran defile" hidden>
+  <h2>Classement</h2>
+  <ol id="liste" class="liste"></ol>
+  <button id="b-credits" class="lien">Crédits photos</button>
+  <div id="credits" class="credits" hidden>
+    <div class="credits-tete"><h3>Crédits photos</h3><button id="b-fermer" class="lien">Fermer</button></div>
+    <p class="petit-texte">Photos Wikimedia Commons, sous les licences indiquées.</p>
+    <ul id="c-liste"></ul>
+  </div>
+</section>
+
+<script src="score.js"></script>
+<script src="app.js"></script>
+<script>
+try { if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {}); } catch (e) {}
+</script>
+</body>
+</html>

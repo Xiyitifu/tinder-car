@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Tests score</title></head>
+<body><pre id="out">...</pre>
+<script src="score.js"></script>
+<script>
+(function () {
+  var out = typeof document !== 'undefined' && document.getElementById('out');
+  try {
+    var eq = function (a, b, m) { if (JSON.stringify(a) !== JSON.stringify(b)) throw new Error(m + ' : ' + JSON.stringify(a) + ' != ' + JSON.stringify(b)); };
+    var M = function (n) { var r = []; for (var i = 1; i <= n; i++) r.push({ id: 'm' + i }); return r; };
+    var c = function (id, photo, v) { return { id: id, photo: photo, v: v }; };
+    var ids = function (r) { return r.map(function (x) { return x.id; }); };
+    var m3 = M(3);
+
+    // a: 2 likes + 1 super = 5
+    var r = rank(m3, [c('m1', '01_avant.jpg', 'like'), c('m1', '02_arriere.jpg', 'like'), c('m1', '03_profil.jpg', 'super')]);
+    eq(r[0], { id: 'm1', score: 5, supers: 1, interieurs: 0 }, 'a');
+
+    // b: 3 vs 3, plus de supers gagne (m2 = 1 super + 0 like, m1 = 3 likes)
+    r = rank(m3, [c('m1', '01_avant.jpg', 'like'), c('m1', '02_arriere.jpg', 'like'), c('m1', '03_profil.jpg', 'like'), c('m2', '01_avant.jpg', 'super')]);
+    eq(ids(r), ['m2', 'm1', 'm3'], 'b ordre'); eq([r[0].score, r[1].score], [3, 3], 'b scores');
+
+    // c: supers egaux, plus d'interieurs likes gagne (m2 devant m1 malgre l'ordre du fichier)
+    r = rank(m3, [c('m1', '01_avant.jpg', 'like'), c('m1', '02_arriere.jpg', 'like'), c('m2', '01_interieur.jpg', 'like'), c('m2', '02_tableau_de_bord.jpg', 'like')]);
+    eq(ids(r), ['m2', 'm1', 'm3'], 'c'); eq(r[0].interieurs, 2, 'c interieurs');
+
+    // d: egalite totale -> ordre du fichier
+    r = rank(m3, [c('m3', '01_avant.jpg', 'like'), c('m1', '01_avant.jpg', 'like'), c('m2', '01_avant.jpg', 'like')]);
+    eq(ids(r), ['m1', 'm2', 'm3'], 'd');
+
+    // e: zero choix -> 14 modeles a 0 dans l'ordre
+    var m14 = M(14);
+    r = rank(m14, []);
+    eq(ids(r), ids(m14), 'e ordre'); eq(r.every(function (x) { return x.score === 0 && x.supers === 0 && x.interieurs === 0; }), true, 'e zeros');
+
+    // f: nope ne compte pas (meme interieur)
+    r = rank(m3, [c('m1', '01_interieur.jpg', 'nope'), c('m2', '01_avant.jpg', 'like')]);
+    eq(ids(r), ['m2', 'm1', 'm3'], 'f ordre'); eq(r[1], { id: 'm1', score: 0, supers: 0, interieurs: 0 }, 'f nope');
+
+    // g: choix vide / undefined
+    eq(ids(rank(m3, undefined)), ['m1', 'm2', 'm3'], 'g');
+
+    // h: id de choix inconnu ignore (pas d'entree ajoutee)
+    r = rank(m3, [c('zzz', '01_avant.jpg', 'super'), c('m2', '01_avant.jpg', 'like')]);
+    eq(ids(r), ['m2', 'm1', 'm3'], 'h ordre'); eq(r.length, 3, 'h longueur');
+
+    if (out) out.textContent = 'OK';
+    else console.log('OK');
+  } catch (e) {
+    if (out) out.textContent = 'ECHEC : ' + e.message;
+    else { console.log('ECHEC : ' + e.message); process.exitCode = 1; }
+  }
+})();
+</script></body></html>

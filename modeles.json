@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "projet": "Voiture familiale E85 – modèles retenus",
+    "date": "2026-11-09",
+    "criteres": {
+      "budget_eur": [
+        2500,
+        8000
+      ],
+      "km": [
+        15000,
+        160000
+      ],
+      "types": "SUV, monospace ou 4x4 familial",
+      "critere_technique": "essence atmosphérique à injection indirecte (multipoint), conversion E85 par boîtier homologué ; flex d'usine indiqué à part"
+    },
+    "avertissements": [
+      "Les liens Leboncoin n'ont pas pu être testés (site inaccessible depuis l'environnement de génération) : les codes de modèle sont des suppositions.",
+      "Le type d'injection vient de fiches techniques et de catalogues de pièces, pas des constructeurs.",
+      "L'homologation d'un boîtier pour chaque modèle précis n'est pas vérifiée : à faire valider par l'installateur (norme Euro, CV fiscaux, injection).",
+      "Surconsommation à l'E85 : environ 20 à 30 % (MAIF).",
+      "Reprogrammation calculateur : interdite par la législation, non recommandée."
+    ],
+    "boitiers_homologues": "Catégories : injection indirecte Euro 3/4 et Euro 5/6, 7 CV et moins ou 8 à 14 CV ; injection directe Euro 5/6 aussi. 15 CV et plus : pas de catégorie homologuée identifiée.",
+    "sources_generales": [
+      {
+        "titre": "FlexFuel, procédure d'homologation",
+        "url": "https://www.flexfuel-company.com/content/uploads/sites/2/2022/01/procedure-dhomologation-2021-ok.pdf"
+      },
+      {
+        "titre": "MAIF, conversion E85",
+        "url": "https://www.maif.fr/vehicule-mobilite/guide-conduite-eco-responsable/passer-sa-voiture-ethanol"
+      },
+      {
+        "titre": "Capcar, E85 et youngtimers",
+        "url": "https://www.capcar.fr/blog/youngtimer-ethanol-e85"
+      }
+    ]
+  },
+  "modeles": [
+    {
+      "id": "dacia-duster-1-k4m",
+      "marque": "Dacia",
+      "modele": "Duster I",
+      "version": "1.6 16V (K4M)",
+      "carrosserie": "SUV compact",
+      "transmission": "4x2 ou 4x4 selon version",
+      "annees": "mars 2010 – 2017 (le K4M a été remplacé progressivement par le 1.6 SCe 115 en fin de série ; date exacte non trouvée)",
+      "moteur": "1.6 16V atmosphérique, conception ancienne (K4M)",
+      "injection": "indirecte (multipoint)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Même moteur K4M que celui qui a lancé la recherche : cas d'école pour un boîtier"
+      ],
+      "vigilance": [
+        "Une variante « Hi-Flex » du K4M existe : vérifier si elle a été vendue en France (mention FE en case P3 de la carte grise)",
+        "Vérifier la catégorie de boîtier (Euro, CV fiscaux) avec l'installateur"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2010-2017&fuel=1&u_car_brand=DACIA&u_car_model=DACIA_Duster&owner_type=all&sort=time&order=desc",
+      "sources": [],
+      "note_sources": "Données issues des échanges précédents ; URLs non conservées, à re-vérifier.",
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Dacia Duster 2010",
+          "Dacia Duster 2013 interior"
+        ],
+        "commons_files": [
+          "File:Armaturenbrett Dacia Duster.jpg",
+          "File:Dacia Duster Urban Explorer Front.JPG",
+          "File:Dacia Duster Ambiance 1.6 16V 4x2 Artiksweiß Seite.JPG",
+          "File:2017 Dacia Duster Ambiance DCi 4X2 1.5 Rear.jpg",
+          "File:Dacia Duster Ambiance 1.6 16V 4x2 Artiksweiß Front.JPG",
+          "File:Dacia Duster 105 4x4 Prestige – Frontansicht, 31. Juli 2012, Heiligenhaus.jpg"
+        ]
+      }
+    },
+    {
+      "id": "nissan-qashqai-1-16",
+      "marque": "Nissan",
+      "modele": "Qashqai I (J10)",
+      "version": "1.6 atmosphérique (114 ch jusqu'en 2010, 117 ch ensuite)",
+      "carrosserie": "SUV compact",
+      "transmission": "traction uniquement pour le 1.6",
+      "annees": "mars 2007 – octobre 2014",
+      "moteur": "1.6 atmosphérique (HR16DE), Euro 4 puis Euro 5",
+      "injection": "indirecte (multipoint)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Le 2.0 MR20DE (141 ch, 2007-2013) est aussi à injection dans le collecteur et existe en intégrale ; voir la fiche X-Trail T31"
+      ],
+      "vigilance": [
+        "Écarter le 1.2 DIG-T (injection directe, turbo, plus de boîtier FlexFuel homologué selon L'Argus, avril 2022)",
+        "Le 1.6 est une traction : pas de 4x4"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2007-2014&fuel=1&u_car_brand=NISSAN&u_car_model=NISSAN_Qashqai&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Catalogue : Qashqai 2.0 MR20DE, injection collecteur",
+          "url": "https://shop.rolling.hu/catalog/SCHAEFFLER/nissan-qashqai-qashqai-2-i-van-j10-jj10e-20"
+        },
+        {
+          "titre": "Catalogue : motorisations Qashqai / X-Trail",
+          "url": "https://www.der-ersatzteile-profi.de/artikel/zuendspule-a5040108"
+        }
+      ],
+      "note_sources": "Dates et puissances issues des échanges précédents (auto-data.net) ; URL non conservée.",
+      "photos": {
+        "commons_categories": [
+          "Nissan Qashqai (J10)",
+          "Nissan Qashqai I"
+        ],
+        "commons_search": [
+          "Nissan Qashqai 2007",
+          "Nissan Qashqai J10 interior"
+        ]
+      }
+    },
+    {
+      "id": "ford-kuga-1-25t",
+      "marque": "Ford",
+      "modele": "Kuga I",
+      "version": "2.5 Duratec Turbo 200 ch",
+      "carrosserie": "SUV compact",
+      "transmission": "4x4 Haldex, boîte manuelle 6 rapports ou automatique 5 rapports",
+      "annees": "commercialisation février 2008 ; 2.5 T à partir de fin 2008 / début 2009 ; arrêt de fabrication janvier 2013",
+      "moteur": "5 cylindres turbo d'origine Volvo, 13 CV fiscaux, Euro 5",
+      "injection": "non confirmée par une source (à ma connaissance indirecte)",
+      "statut_e85": "conversion par boîtier (pas de version flex d'usine)",
+      "atouts": [
+        "Même bloc que le Volvo V70 2.5FT flex d'usine",
+        "4x4 de série"
+      ],
+      "vigilance": [
+        "Consommation mixte annoncée 9,9 L/100 km à l'essence",
+        "Rare en occasion : les diesels dominent l'offre",
+        "Turbo : les moteurs turbo peuvent demander une étude au cas par cas pour le boîtier",
+        "13 CV : la catégorie 8-14 CV existe, mais l'homologation pour ce modèle n'est pas vérifiée"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2008-2013&fuel=1&u_car_brand=FORD&u_car_model=FORD_Kuga&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Caradisiac, Kuga 2008/2013 en occasion",
+          "url": "https://www.caradisiac.com/ford-kuga-2008-2013-en-occasion-un-suv-fiabilise-209479.htm"
+        },
+        {
+          "titre": "Caradisiac, fiche Kuga 2.5 T 200",
+          "url": "https://www.caradisiac.com/fiches-techniques/modele--ford-kuga/2008/2.5+t+200+4x4+titanium+bvm6/"
+        },
+        {
+          "titre": "L'Argus, fiche Kuga 2.5T 200",
+          "url": "https://www.largus.fr/fiche-technique/Ford/Kuga/I/2010/SUV+5+Portes/25T+200ch+Titanium+4x4-983966.html"
+        },
+        {
+          "titre": "Communiqué Ford, 2.5 Duratec Turbo (2008)",
+          "url": "https://ophelia.sdsu.edu:8443/ford/10-21-2008/about-ford/news-announcements/press-releases/press-releases-detail/pr-ford-offers-more-performance-and-28994.html"
+        },
+        {
+          "titre": "Motor-car.net, Kuga I et bloc Volvo",
+          "url": "https://www.motor-car.net/ford-eu/item/24172-ford-kuga"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Ford Kuga 2008",
+          "Ford Kuga 2010 interior"
+        ],
+        "commons_files": [
+          "File:1st Ford Kuga interior.jpg",
+          "File:2012 Ford Kuga in Frozen White, front left, 06-08-2025.jpg",
+          "File:2012 Ford Kuga in Frozen White, rear left, 06-08-2025.jpg",
+          "File:2010 Ford Kuga Zetec TDCi - 1997cc 2.0 (136PS) Diesel - White - 06-2024, Front.jpg",
+          "File:Ford Kuga (seit 2008) 2.0 TDCi rear MJ.JPG",
+          "File:2012 Ford Kuga Titanium (16608264392).jpg"
+        ]
+      }
+    },
+    {
+      "id": "ford-s-max-1-flexifuel",
+      "marque": "Ford",
+      "modele": "S-MAX I",
+      "version": "2.0 Flexifuel Duratec 145 ch",
+      "carrosserie": "monospace 5-7 places",
+      "transmission": "traction, boîte manuelle 6 rapports",
+      "annees": "FlexiFuel annoncé en 2007 pour début 2008 ; restylage 2010 – 2015",
+      "moteur": "2.0 Duratec 4 cylindres atmosphérique, E85 d'usine",
+      "injection": "non précisée (moteur Duratec flex d'usine)",
+      "statut_e85": "flex d'usine",
+      "atouts": [
+        "Aucun boîtier à poser",
+        "Un retour d'usage : 9 L/100 km au SP95, 12 L/100 km à l'E85 (avis unique)"
+      ],
+      "vigilance": [
+        "Traction uniquement",
+        "Vérifier la mention FE (case P3 de la carte grise)"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2008-2015&u_car_brand=FORD&u_car_model=FORD_S-MAX&text=flexifuel&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Ford-Werke, Mondeo/S-MAX/Galaxy bioéthanol",
+          "url": "https://www.presseportal.de/pm/6955/1153601"
+        },
+        {
+          "titre": "Autoblog, Flexifuel Ford (2007)",
+          "url": "https://www.autoblog.com/2007/09/13/frankfurt-2007-ford-of-europe-pushes-flexifuel-engines/"
+        },
+        {
+          "titre": "Cars-Data, S-MAX 2.0 Flexifuel",
+          "url": "https://cars-data.com/en/ford/s-max/2010/2-0-flexifuel-trend--56037"
+        },
+        {
+          "titre": "fiches-auto.fr, avis S-MAX 2.0 Flexifuel",
+          "url": "https://www.fiches-auto.fr/avis-ford/avis-unique-177-1656-ford-s-max-20l-145-flexifuel-2009.php"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Ford S-Max 2006",
+          "Ford S-Max 2010 interior"
+        ],
+        "commons_files": [
+          "File:Ford S-MAX interior.jpg",
+          "File:2010 Ford S-Max Zetec TDCi 2.0 Front.jpg",
+          "File:2010 Ford S-Max Zetec TDCi 2.0 Rear.jpg",
+          "File:FORD S-MAX FIRST GENERATION China (5).jpg",
+          "File:2006 Ford S-Max Zetec.jpg",
+          "File:Ford S-Max Facelift side 20100926.jpg"
+        ]
+      }
+    },
+    {
+      "id": "volvo-v70-3-flexifuel",
+      "marque": "Volvo",
+      "modele": "V70 III",
+      "version": "2.0F 145 ch et 2.5FT 200 puis 231 ch (FlexiFuel)",
+      "carrosserie": "break familial (pas un SUV)",
+      "transmission": "non précisée dans les sources",
+      "annees": "2.0F depuis fin 2007 ; 2.5FT à partir de mi-2008 ; 231 ch en juin 2009",
+      "moteur": "2.0 4 cylindres atmosphérique ou 2.5 5 cylindres turbo, E85 d'usine",
+      "injection": "non précisée",
+      "statut_e85": "flex d'usine",
+      "atouts": [
+        "Le 2.5FT est le bloc du Kuga I en version flex d'usine",
+        "Consommation annoncée du 2.5FT : 9,4 L/100 km en manuelle (200 ch)"
+      ],
+      "vigilance": [
+        "C'est un break, pas un SUV",
+        "Aucun XC70 flex trouvé dans les sources"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2008-2016&u_car_brand=VOLVO&u_car_model=VOLVO_V70&text=flexifuel&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Volvo, V70/S80 2.5FT",
+          "url": "https://www.media.volvocars.com/global/en-gb/media/pressreleases/15237"
+        },
+        {
+          "titre": "Volvo France, gamme E85",
+          "url": "https://mb.cision.com/Main/23608/4187092/3551922.pdf"
+        },
+        {
+          "titre": "Volvo, 2.5FT 231 ch",
+          "url": "https://mb.cision.com/Main/23602/4202848/3570161.pdf"
+        },
+        {
+          "titre": "Volvo, consommations 2.5FT",
+          "url": "https://www.volvocars.com/uk/media/press-releases/EBD099FF931F226E/"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Volvo V70 2008",
+          "Volvo V70 2010 interior"
+        ],
+        "commons_files": [
+          "File:2008VolvoV70Interior.jpg",
+          "File:2008 Volvo V70 front DC.JPG",
+          "File:2008 Volvo V70 rear DC.JPG",
+          "File:2008 Volvo V70, Avesta.jpg",
+          "File:2008-2011 Volvo V70 rear 4.16.18.jpg",
+          "File:2008 Volvo V70 by Nilsson (Helsinki, Finland).jpg"
+        ]
+      }
+    },
+    {
+      "id": "seat-altea-multifuel",
+      "marque": "SEAT",
+      "modele": "Altea / Altea XL",
+      "version": "1.6 MPI MultiFuel 102 ch",
+      "carrosserie": "monospace compact 5 places",
+      "transmission": "traction, boîte manuelle 5 rapports",
+      "annees": "version éthanol restylée 2010 – 2013 ; Leon 1.6 MultiFuel : 07/2005 – 08/2013",
+      "moteur": "1.6 MPI atmosphérique, E85 d'usine",
+      "injection": "MPI (multipoint)",
+      "statut_e85": "flex d'usine",
+      "atouts": [
+        "Injection MPI, Euro 5 sur la version restylée"
+      ],
+      "vigilance": [
+        "Puissance modeste (0 à 100 km/h en 12,8 s)",
+        "Vente en France du MultiFuel non confirmée",
+        "L'Altea Freetrack est un 4x4 Haldex mais aucune version flex n'est confirmée"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2006-2013&u_car_brand=SEAT&u_car_model=SEAT_Altea&text=multifuel&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Wikipedia, SEAT Altea",
+          "url": "https://en.wikipedia.com/wiki/SEAT_Altea"
+        },
+        {
+          "titre": "auto-data.net, Altea 1.6 Ethanol",
+          "url": "https://www.auto-data.net/en/seat-altea-facelift-2009-1.6-102hp-ethanol-21348"
+        },
+        {
+          "titre": "Catalogue Leon 1.6 MultiFuel",
+          "url": "https://www.der-ersatzteile-profi.de/artikel/tuerschloss-a3625517"
+        }
+      ],
+      "photos": {
+        "commons_categories": [
+          "SEAT Altea",
+          "SEAT Altea XL"
+        ],
+        "commons_search": [
+          "Seat Altea 2007",
+          "Seat Altea XL interior"
+        ]
+      }
+    },
+    {
+      "id": "honda-cr-v-3-4-20",
+      "marque": "Honda",
+      "modele": "CR-V III / IV",
+      "version": "2.0 i-VTEC 150 ch (III) / 155 ch (IV)",
+      "carrosserie": "SUV",
+      "transmission": "4x4 (AWD) ou traction selon version",
+      "annees": "CR-V III : 2007 – 2012 ; CR-V IV 2.0 : 2012 – 2015",
+      "moteur": "2.0 i-VTEC R20A atmosphérique",
+      "injection": "multipoint (confirmé pour la génération précédente ; R20A à ma connaissance idem)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Une liste de compatibilité range le CR-V III parmi les injections indirectes pour boîtier d'entrée de gamme (700 à 1 000 € posé)",
+        "Retour d'un propriétaire : environ 11 L/100 km à l'E85 avec boîtier (CR-V 2.0 155 ch de 2012)"
+      ],
+      "vigilance": [
+        "Un catalogue cite un « CR-V IV 2.0 Flex » : marché d'origine non précisé"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2007-2015&fuel=1&u_car_brand=HONDA&u_car_model=HONDA_CR-V&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Rexbo, catalogue Honda",
+          "url": "https://www.rexbo.co.uk/febest/thermostat-03462002"
+        },
+        {
+          "titre": "auto-abc, CR-V IV 2.0",
+          "url": "https://www.auto-abc.eu/honda-crv/v24316-2012"
+        },
+        {
+          "titre": "fiches-auto.fr, avis CR-V 2.0 VTEC",
+          "url": "https://www.fiches-auto.fr/avis-honda/avis-unique-480-111160-honda-crv-20-vtec-155-ch-2012-155cv-78000kms.php"
+        },
+        {
+          "titre": "auto-max.fr, liste injection indirecte",
+          "url": "https://auto-max.fr/?p=245"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Honda CR-V 2008",
+          "Honda CR-V 2013 interior"
+        ],
+        "commons_files": [
+          "File:3rdCR-Vinterior.jpg",
+          "File:2007-2009 Honda CR-V (RE MY2007) Luxury wagon 01.jpg",
+          "File:2007-2009 Honda CR-V (RE MY2007) Luxury wagon 02.jpg",
+          "File:2007-2009 Honda CR-V (RE MY2007) Luxury wagon 03.jpg",
+          "File:2010 Honda CR-V (RE MY10) 4WD wagon (2015-06-04) 01.jpg",
+          "File:2008 Honda CR-V EX 4WD rear.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mazda-5-1-20",
+      "marque": "Mazda",
+      "modele": "Mazda5 (CR)",
+      "version": "2.0 MZR 145/146 ch",
+      "carrosserie": "monospace",
+      "transmission": "traction",
+      "annees": "2005 – 2010",
+      "moteur": "2.0 MZR atmosphérique (même famille que le Duratec Ford, à ma connaissance)",
+      "injection": "non vérifiée",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Monospace sans turbo"
+      ],
+      "vigilance": [
+        "Retour de forum : voyant moteur au-delà de la moitié d'E85 sur MX-5, Mazda 3 2.0 un peu plus permissive : tolérance variable",
+        "Écarter les Mazda 3 2.0 MZR DISI (injection directe)",
+        "Filtrer à la main : les annonces mêlent diesels et 1.8"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2005-2015&fuel=1&u_car_brand=MAZDA&u_car_model=MAZDA_5&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "autoplenum, Mazda5 2.0 145 PS",
+          "url": "https://www.autoplenum.de/auto/mazda/5/van-2005/2-0-145-ps"
+        },
+        {
+          "titre": "Caradisiac, Mazda5 : moteurs",
+          "url": "https://www.caradisiac.com/Coup-de-chiffon-sur-le-Mazda-22188.htm"
+        },
+        {
+          "titre": "Forum HardWare.fr, E85 Mazda",
+          "url": "https://forum.hardware.fr/hfr/Discussions/Auto-Moto/rouleurs-essence-alcoolisee-sujet_98162_269.htm"
+        }
+      ],
+      "photos": {
+        "commons_categories": [
+          "Mazda5 I",
+          "Mazda5 (CR)",
+          "Mazda5 (first generation)"
+        ],
+        "commons_search": [
+          "Mazda5 2006",
+          "Mazda5 2008 interior"
+        ]
+      }
+    },
+    {
+      "id": "toyota-rav4-3-20",
+      "marque": "Toyota",
+      "modele": "RAV4 III (XA30)",
+      "version": "2.0 VVT-i 152 ch",
+      "carrosserie": "SUV",
+      "transmission": "4x4, boîte manuelle",
+      "annees": "environ 2006 – 2012/2013 (dates non sourcées)",
+      "moteur": "2.0 VVT-i atmosphérique à chaîne de distribution, 10 CV fiscaux",
+      "injection": "indirecte (modèle cité dans l'homologation FlexFuel injection indirecte Euro 5/6, 8-14 CV)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Cité explicitement parmi les modèles compatibles de la première homologation FlexFuel (2018)"
+      ],
+      "vigilance": [
+        "Essai Largus : relances poussives, le moteur manque de couple bas",
+        "La « fiabilité exemplaire » vient d'un texte d'annonce commerciale"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2006-2013&fuel=1&u_car_brand=TOYOTA&u_car_model=TOYOTA_RAV4&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "L'Argus, annonce RAV4 III 2.0 VVT-i",
+          "url": "https://occasion.largus.fr/auto/annonce-0e7368e3-4d67-4a80-be0b-1fcaa37e9cdf-toyota-rav4-2008-55767km"
+        },
+        {
+          "titre": "L'Argus, Toyota RAV4 VVT-i",
+          "url": "https://www.largus.fr/actualite-automobile/toyota-rav4-vvt-i-116340.html"
+        },
+        {
+          "titre": "FlexFuel, première homologation",
+          "url": "https://www.flexfuel-company.com/content/uploads/sites/2/2020/07/cp-1re-homologation-ffed.pdf"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Toyota RAV4 2008",
+          "Toyota RAV4 XA30 interior"
+        ],
+        "commons_files": [
+          "File:2011 Toyota RAV4 Limited, front right, 05-27-2024.jpg",
+          "File:2011 Toyota RAV4 4WD, rear right, 07-09-2023.jpg",
+          "File:Toyota RAV4 (III, Facelift) – Seitenansicht, 13. Februar 2011, Mettmann.jpg",
+          "File:2008 Toyota RAV4 (GSA33R MY09) ZR6 wagon (2008-10-09) 01.jpg",
+          "File:Toyota RAV4 III 2. Facelift front 20100425.jpg",
+          "File:TOYOTA RAV4 (XA30) China (4).jpg"
+        ]
+      }
+    },
+    {
+      "id": "kia-sportage-3-g4kd",
+      "marque": "Kia",
+      "modele": "Sportage III (SL)",
+      "version": "2.0 CVVT G4KD 150/163/166 ch",
+      "carrosserie": "SUV",
+      "transmission": "traction ou AWD",
+      "annees": "juillet 2010 – 2013 pour le G4KD (G4NA en 2014-2015)",
+      "moteur": "2.0 G4KD atmosphérique",
+      "injection": "multipoint (mêmes G4KD que l'ix35)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "AWD disponible"
+      ],
+      "vigilance": [
+        "Écarter le 2.0 GDI (G4NC, injection directe) à partir de février 2014",
+        "Une version flex existe au Brésil (non pertinente pour la France)"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2010-2013&fuel=1&u_car_brand=KIA&u_car_model=KIA_Sportage&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Rexbo, Sportage / ix35",
+          "url": "https://www.rexbo.co.uk/abe/brake-caliper-czh1610"
+        },
+        {
+          "titre": "Catalogue Sportage / ix35 (G4KD, G4NA, G4NC)",
+          "url": "https://www.der-ersatzteile-profi.de/artikel/fahrwerksfeder-a5058624"
+        }
+      ],
+      "photos": {
+        "commons_categories": [
+          "Kia Sportage (SL)",
+          "Kia Sportage III"
+        ],
+        "commons_search": [
+          "Kia Sportage 2010",
+          "Kia Sportage SL interior"
+        ]
+      }
+    },
+    {
+      "id": "hyundai-ix35-g4kd",
+      "marque": "Hyundai",
+      "modele": "ix35",
+      "version": "2.0 G4KD 150/163/166 ch",
+      "carrosserie": "SUV",
+      "transmission": "traction ou 4WD",
+      "annees": "2010 – 2013 pour le G4KD",
+      "moteur": "2.0 G4KD atmosphérique (Theta II)",
+      "injection": "multipoint",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "4WD disponible"
+      ],
+      "vigilance": [
+        "Écarter les versions GDi (injection directe) du restylage 2013-2014"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2010-2013&fuel=1&u_car_brand=HYUNDAI&u_car_model=HYUNDAI_ix35&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "fastcarcheck, ix35 G4KD multipoint",
+          "url": "https://fastcarcheck.uk/specs/make/hyundai/ix35/5676"
+        },
+        {
+          "titre": "Rexbo, Sportage / ix35",
+          "url": "https://www.rexbo.co.uk/abe/brake-caliper-czh1610"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Hyundai ix35 2010",
+          "Hyundai ix35 interior"
+        ],
+        "commons_files": [
+          "File:Hyundai ix35 2.0 4WD Premium – Frontansicht, 29. Mai 2011, Heiligenhaus.jpg",
+          "File:Hyundai ix35 2.0 4WD Premium – Heckansicht, 29. Mai 2011, Heiligenhaus.jpg",
+          "File:2010 Hyundai ix35 (LM) Elite wagon 01.jpg",
+          "File:2010 Hyundai ix35 (LM) Elite wagon 02.jpg",
+          "File:20170731 135 nassogne.jpg",
+          "File:2013 Hyundai ix35 Premium 2WD CRDi 1.7.jpg"
+        ]
+      }
+    },
+    {
+      "id": "suzuki-grand-vitara-2-20",
+      "marque": "Suzuki",
+      "modele": "Grand Vitara II",
+      "version": "2.0 140 ch (2.4 : 163-169 ch)",
+      "carrosserie": "SUV 4x4",
+      "transmission": "traction intégrale",
+      "annees": "2005 – 2015",
+      "moteur": "2.0 atmosphérique 16V",
+      "injection": "multipoint (fiche technique du 2.0)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Vrai 4x4 avec transmission intégrale"
+      ],
+      "vigilance": [
+        "Consommation mixte d'environ 9 à 9,7 L/100 km à l'essence",
+        "Éviter le V6 2.7 (15 CV et plus : pas de catégorie homologuée identifiée)"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2005-2015&fuel=1&u_car_brand=SUZUKI&u_car_model=SUZUKI_Grand%20Vitara&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Carter-Cash, motorisations Grand Vitara II",
+          "url": "https://www.carter-cash.com/pieces-auto/c/moteur/systeme-injection/injecteur-essence/m/suzuki/grand-vitara-ii"
+        },
+        {
+          "titre": "fastcarcheck, Grand Vitara 2.0 multipoint",
+          "url": "https://fastcarcheck.uk/specs/make/suzuki/grand-vitara/263040"
+        },
+        {
+          "titre": "fastcarcheck, consommation",
+          "url": "https://fastcarcheck.uk/specs/make/suzuki/grand-vitara/263047"
+        }
+      ],
+      "photos": {
+        "commons_categories": [
+          "Suzuki Grand Vitara (JT)",
+          "Suzuki Grand Vitara II"
+        ],
+        "commons_search": [
+          "Suzuki Grand Vitara 2008",
+          "Suzuki Grand Vitara JT interior"
+        ]
+      }
+    },
+    {
+      "id": "nissan-x-trail-t31-20",
+      "marque": "Nissan",
+      "modele": "X-Trail T31 / Qashqai+2",
+      "version": "2.0 MR20DE 141 ch",
+      "carrosserie": "SUV (Qashqai+2 : 7 places)",
+      "transmission": "traction ou intégrale",
+      "annees": "X-Trail : 03/2007 – 11/2013 ; Qashqai 2.0 : 02/2007 – 12/2013",
+      "moteur": "2.0 MR20DE atmosphérique",
+      "injection": "dans le collecteur d'admission (indirecte)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "Intégrale disponible",
+        "Qashqai+2 pour 7 places"
+      ],
+      "vigilance": [
+        "Écarter le X-Trail T32 2.0 MR20DD (injection directe)"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2007-2013&fuel=1&u_car_brand=NISSAN&u_car_model=NISSAN_X-Trail&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Catalogue Qashqai 2.0 MR20DE",
+          "url": "https://shop.rolling.hu/catalog/SCHAEFFLER/nissan-qashqai-qashqai-2-i-van-j10-jj10e-20"
+        },
+        {
+          "titre": "Catalogue Nissan X-Trail / Qashqai",
+          "url": "https://www.der-ersatzteile-profi.de/artikel/zuendspule-a5040108"
+        }
+      ],
+      "photos": {
+        "commons_categories": [],
+        "commons_search": [
+          "Nissan X-Trail 2008",
+          "Nissan X-Trail T31 interior"
+        ],
+        "commons_files": [
+          "File:Nissan X-Trail – interior view with panoramic sunroof.jpg",
+          "File:2008 Nissan X-TRAIL 01.JPG",
+          "File:2014 Nissan X-Trail 2.5 Xt (front), Kediri.jpg",
+          "File:2014 Nissan X-Trail 2.5 Xt (rear), Kediri.jpg",
+          "File:Nissan X-Trail – left side view.jpg",
+          "File:NISSAN X-TRAIL (T31) China (3).jpg"
+        ]
+      }
+    },
+    {
+      "id": "mitsubishi-outlander-2-20",
+      "marque": "Mitsubishi",
+      "modele": "Outlander II / ASX",
+      "version": "2.0 4B11 147 ch (Outlander II) ; 2.0 MIVEC 150 ch (ASX)",
+      "carrosserie": "SUV",
+      "transmission": "traction ou 4WD",
+      "annees": "Outlander II : 11/2006 – 11/2012 ; ASX 2.0 : à partir de 2010",
+      "moteur": "2.0 MIVEC 4B11 atmosphérique",
+      "injection": "multipoint (fiche ASX 2020)",
+      "statut_e85": "conversion par boîtier",
+      "atouts": [
+        "4WD disponible"
+      ],
+      "vigilance": [
+        "Un forum cite une Outlander roulant à 50 % d'E85 après reprogrammation : interdit, non recommandé",
+        "Écarter l'Outlander PHEV et le 3.0 V6"
+      ],
+      "leboncoin": "https://www.leboncoin.fr/recherche?category=2&price=2500-8000&mileage=15000-160000&regdate=2006-2012&fuel=1&u_car_brand=MITSUBISHI&u_car_model=MITSUBISHI_Outlander&owner_type=all&sort=time&order=desc",
+      "sources": [
+        {
+          "titre": "Catalogue Mitsubishi ASX / Outlander",
+          "url": "https://www.der-ersatzteile-profi.de/artikel/bremsscheibe-a6475008"
+        },
+        {
+          "titre": "CarExpert, ASX (injection multipoint)",
+          "url": "https://www.carexpert.com.au/mitsubishi/asx/2020/fuel"
+        }
+      ],
+      "photos": {
+        "commons_categories": [
+          "Mitsubishi Outlander (CW)",
+          "Mitsubishi Outlander II"
+        ],
+        "commons_search": [
+          "Mitsubishi Outlander 2008",
+          "Mitsubishi Outlander II interior"
+        ],
+        "commons_exclude": [
+          "Mitsubishi Outlander GL 2008"
+        ]
+      }
+    }
+  ]
+}
