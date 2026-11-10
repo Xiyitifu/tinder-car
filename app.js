@@ -83,6 +83,7 @@
     img.draggable = false;
     img.onerror = function () { img.hidden = true; };
     img.src = src(o.id, o.photo);
+    c.style.setProperty('--img', 'url("' + img.src + '")'); // fond flou qui remplit les bandes autour de la photo entière
     c.appendChild(img);
     c.appendChild(el('span', 'tampon like', 'LIKE'));
     c.appendChild(el('span', 'tampon nope', 'NOPE'));

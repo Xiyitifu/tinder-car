@@ -1,5 +1,5 @@
 // Incrémenter VERSION à chaque changement de code, de données ou de photos.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CODE = ['./', 'index.html', 'style.css', 'app.js', 'score.js', 'modeles.json',
   'manifest.json', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png',
   'photos/index.json', 'photos/CREDITS.csv'];
